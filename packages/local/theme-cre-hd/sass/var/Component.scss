@@ -1,0 +1,18 @@
+$font-family: dynamic(Microsoft Yahei, '微软雅黑', verdana, helvetica, arial, sans-serif);
+$font-weight: 400;
+$font-size: 12px;
+$font-weight-bold: 700;
+$color: #333333;
+$body-background-color: #F0F0F0;
+
+$neutral-color: dynamic(#d0d0d0);
+$neutral-light-color: dynamic(mix(#fff, $neutral-color, 80%));
+$neutral-highlight-color: dynamic(mix(#fff, $neutral-color, 60%));
+$neutral-medium-dark-color: dynamic(mix(#000, $neutral-color, 15.2%));
+$neutral-dark-color: dynamic(mix(#000, $neutral-color, 30.4%));
+
+// lighter text color for use on light backgrounds
+$highlight-color: dynamic(#606060);
+// light text color for use on dark backgrounds
+$light-color: dynamic(#f0f0f0);
+$enable-font-icons: dynamic(true);

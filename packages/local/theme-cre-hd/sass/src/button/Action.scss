@@ -1,0 +1,261 @@
+.action-create {
+  color: #81cb31;
+}
+
+.action-update {
+  color: #4e97ff;
+}
+
+.action-undelete {
+  color: #4e97ff;
+}
+
+.action-delete {
+  color: #ed4a52;
+}
+
+.action-remove {
+  color: #ed4a52;
+}
+
+a.action-create {
+  cursor: pointer;
+}
+
+a.action-update {
+  cursor: pointer;
+}
+
+a.action-undelete {
+  cursor: pointer;
+}
+
+a.action-delete {
+  cursor: pointer;
+}
+
+a.action-remove {
+  cursor: pointer;
+}
+
+.#{$prefix}grid-cell a.action-create {
+  margin-left: 5px;
+  margin-right: 10px
+}
+
+.#{$prefix}grid-cell a.action-update {
+  margin-left: 5px;
+  margin-right: 10px
+}
+
+.#{$prefix}grid-cell a.action-undelete {
+  margin-left: 5px;
+  margin-right: 10px
+}
+
+.#{$prefix}grid-cell a.action-delete {
+  margin-left: 5px;
+  margin-right: 10px
+}
+
+.#{$prefix}grid-cell a.action-remove {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.#{$prefix}grid-cell button.action-append {
+  margin-left: 5px;
+  margin-right: 10px;
+  line-height: 22px;
+}
+
+.#{$prefix}grid-cell button.action-create {
+  margin-left: 5px;
+  margin-right: 10px;
+  line-height: 22px;
+}
+
+.#{$prefix}grid-cell button.action-update {
+  margin-left: 5px;
+  margin-right: 10px;
+  line-height: 22px;
+}
+
+.#{$prefix}grid-cell button.action-undelete {
+  margin-left: 5px;
+  margin-right: 10px;
+  line-height: 22px;
+}
+
+.#{$prefix}grid-cell button.action-delete {
+  margin-left: 5px;
+  margin-right: 10px;
+  line-height: 22px;
+}
+
+.#{$prefix}grid-cell button.action-remove {
+  margin-left: 5px;
+  margin-right: 10px;
+  line-height: 22px;
+}
+
+.#{$prefix}grid-cell button.action-upload {
+  margin-left: 5px;
+  margin-right: 10px;
+  line-height: 22px;
+}
+
+//////////////////////////////////添加与删除按钮//////////////////////////////////
+button.action-append {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #81cb31;
+  line-height: 18px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+button.action-append:disabled {
+  opacity: 0.3;
+}
+
+button.action-append::before {
+  content: "\f055";
+}
+
+button.action-remove {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ed4a52;
+  line-height: 18px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+button.action-remove:disabled {
+  opacity: 0.3;
+}
+
+button.action-remove::before {
+  content: "\f056";
+}
+
+button.action-upload {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #4e97ff;
+  line-height: 18px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+button.action-upload:disabled {
+  opacity: 0.3;
+}
+
+button.action-upload::before {
+  content: "\f093";
+}
+
+button.fa-minus-circle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ed4a52;
+  line-height: 18px;
+}
+
+button.fa-minus-circle:disabled {
+  opacity: 0.3;
+}
+
+button.fa-plus-circle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #81cb31;
+  line-height: 18px;
+}
+
+button.fa-plus-circle:disabled {
+  opacity: 0.3;
+}
+
+button.action-up {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ed4a52;
+  line-height: 18px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+button.action-up:disabled {
+  opacity: 0.3;
+}
+
+button.action-up::before {
+  content: "\f062";
+}
+
+button.action-down {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #81cb31;
+  line-height: 18px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+button.action-down:disabled {
+  opacity: 0.3;
+}
+
+button.action-down::before {
+  content: "\f063";
+}
+
+button.fa-cloud-download {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #5FA1DD;
+  line-height: 18px;
+}
+
+button.fa-cloud-download:disabled {
+  opacity: 0.3;
+}

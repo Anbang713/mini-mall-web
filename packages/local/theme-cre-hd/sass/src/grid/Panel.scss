@@ -1,0 +1,29 @@
+/*.#{$prefix}grid-item-container {
+  transform: inherit !important;
+}*/
+
+/** 重写覆盖表格单元格编辑之后左上角有默认图标*/
+.#{$prefix}grid-dirty-cell {
+  background: none ! important;
+}
+
+.#{$prefix}grid-cell-inner > .#{$prefix}form-item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.#{$prefix}grid-cell-inner-no-padding > .#{$prefix}grid-cell-inner {
+  padding: 0 !important;
+}
+
+.#{$prefix}grid-operate-cell .#{$prefix}grid-cell-inner {
+  padding: 0 !important;
+}
+
+.#{$prefix}grid-operate-cell.#{$prefix}grid-item-focused .#{$prefix}grid-cell-inner:before {
+  border: none;
+}
+
+.#{$prefix}panel-body-primary.#{$prefix}grid-body {
+  border-top-color: transparent;
+}

@@ -1,0 +1,58 @@
+$button-default-background-color: #4e97ff;
+$button-default-background-color-disabled: #d2d2d2;
+$button-default-background-gradient: dynamic(null);
+$button-default-background-gradient-over: dynamic(null);
+$button-default-background-gradient-focus: dynamic(null);
+$button-default-background-gradient-pressed: dynamic(null);
+$button-default-background-gradient-focus-over: dynamic(null);
+$button-default-background-gradient-focus-pressed: dynamic(null);
+$button-default-background-gradient-disabled: dynamic(null);
+$button-default-base-color: dynamic($base-color);
+$button-default-border-color-disabled: #d2d2d2;
+$button-default-color: dynamic($light-color);
+$button-default-glyph-color: dynamic($light-color);
+$button-default-glyph-opacity: 1;
+$button-default-inner-border-width: 0;
+$button-default-inner-border-width-focus: 0;
+
+$button-small-border-radius: 2px;
+$button-small-border-width: 1px;
+$button-small-font-weight: 400;
+$button-small-font-size: 12px;
+$button-small-padding: 3px 4px;
+$button-small-glyph-font-size: 14px;
+$button-small-icon-size: 18px;
+$button-small-arrow-width: dynamic(18px);
+$button-small-arrow-height: dynamic(12px);
+$button-small-split-width: dynamic(20px);
+$button-small-split-height: dynamic(20px);
+
+$button-medium-border-radius: 2px;
+$button-medium-border-width: 1px;
+$button-medium-font-weight: 400;
+$button-medium-font-size: 14px;
+$button-medium-padding: 4px;
+$button-medium-glyph-font-size: 16px;
+$button-medium-icon-size: 20px;
+$button-medium-arrow-width: dynamic(20px);
+$button-medium-arrow-height: dynamic(14px);
+$button-medium-split-width: dynamic(26px);
+$button-medium-split-height: dynamic(24px);
+
+$button-large-border-radius: 2px;
+$button-large-border-width: 1px;
+$button-large-font-weight: 400;
+$button-large-font-size: 16px;
+$button-large-padding: 5px;
+$button-large-glyph-font-size: 18px;
+$button-large-icon-size: 22px;
+$button-large-arrow-width: dynamic(22px);
+$button-large-arrow-height: dynamic(16px);
+$button-large-split-width: dynamic(32px);
+$button-large-split-height: dynamic(28px);
+
+$button-toolbar-inner-border-width: 0;
+$button-toolbar-inner-border-width-focus: 0;
+
+$button-grid-cell-inner-border-width: 0;
+$button-grid-cell-inner-border-width-focus: 0;

@@ -1,0 +1,138 @@
+@import "button/Action.scss";
+@import "button/SwitchButton.scss";
+@import 'custom/Compare.scss';
+@import 'custom/Bpm.scss';
+@import 'custom/PropertySet.scss';
+@import 'region/Region.scss';
+@import 'font-awesome/FontAwesome.scss';
+
+/** 加粗*/
+.#{$prefix}font-weight {
+  font-weight: bold !important;
+}
+
+/** 超宽省略*/
+.#{$prefix}overflow-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/** 页面标题样式*/
+.topTitle {
+  color: #323741;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 28px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/** 浅色*/
+.#{$prefix}tint-color {
+  color: #999999 !important;
+}
+
+.#{$prefix}tint-color:hover {
+  color: #C3C3C3 !important;
+}
+
+.#{$prefix}label-link {
+  cursor: pointer;
+  color: #4e97ff;
+  text-decoration: none;
+}
+
+.#{$prefix}label-link:hover {
+  cursor: pointer;
+  color: #4e97ff;
+  text-decoration: underline;
+}
+
+/** 上浮的气泡*/
+.tip-bubble {
+  background-color: #4e97ff;
+  color: #FFF;
+  padding: 1px 4px;
+  line-height: 1.1;
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  left: -2px;
+}
+
+/**默认的阴影方案*/
+.shadow {
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.20) !important;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.20) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.20) !important;
+}
+
+/** 未可用*/
+.cre-state-unavailable {
+  line-height: 24px;
+  text-align: center;
+  color: #FF6600;
+  border: none;
+  border-radius: 14px;
+  background: inherit;
+  background-color: rgba(255, 102, 0, 0.2);
+}
+
+/** 可用*/
+.cre-state-available {
+  line-height: 24px;
+  text-align: center;
+  color: #44A446;
+  border: none;
+  border-radius: 14px;
+  background: inherit;
+  background-color: rgba(102, 192, 105, 0.2);
+}
+
+/** 注意*/
+.cre-state-danger {
+  line-height: 24px;
+  text-align: center;
+  color: #D85656;
+  border: none;
+  border-radius: 14px;
+  background: inherit;
+  background-color: rgba(216, 86, 86, 0.2);
+}
+
+/** 无效的*/
+.cre-state-invalid {
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  border: none;
+  border-radius: 14px;
+  background: inherit;
+  background-color: rgba(235, 235, 235, 1);
+}
+
+/** 表题栏*/
+.cre-title-label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 24px;
+  text-align: center;
+  color: #4e97ff;
+  border: none;
+  padding: 0 10px;
+  border-radius: 14px;
+  background: inherit;
+  background-color: rgba(95, 162, 221, 0.15);
+}
+
+.drag-enter {
+  border: 1px solid #4e97ff ! important;
+}
+
+.drag-frame {
+  border: 1px dashed #4e97ff ! important;
+}

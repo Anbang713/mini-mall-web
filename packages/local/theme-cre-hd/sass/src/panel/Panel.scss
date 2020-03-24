@@ -1,0 +1,134 @@
+.#{$prefix}panel-header-default-horizontal {
+  padding: 6px 10px 6px 10px !important;
+}
+
+/** 主要的*/
+@include extjs-panel-ui(
+        $ui: 'frame',
+        $ui-body-background-color: #F0F0F0
+);
+
+/** 主要的*/
+@include extjs-panel-ui(
+        $ui: 'primary',
+        $ui-body-background-color: #FFFFFF,
+        $ui-header-background-color: #FFFFFF,
+        $ui-header-border-color: #80ace6,
+        $ui-header-border-width: 6px 0 0 0,
+        $ui-header-border-style: solid,
+        $ui-header-color: #333333,
+        $ui-header-font-size: 16px,
+        $ui-header-font-weight: 400,
+        $ui-header-inner-border-width: 0 0 1px 0,
+        $ui-header-inner-border-color: #E2E2E2
+);
+
+.#{$prefix}panel-header-title-primary.#{$prefix}title-align-left {
+  padding-right: 20px;
+}
+
+.#{$prefix}panel-header.#{$prefix}panel-header-primary {
+  background-color: #f4f7fd;
+  border-left: 6px solid #80ace6 !important;
+}
+
+@include extjs-panel-ui(
+        $ui: 'secondary',
+        $ui-body-background-color: #FFFFFF,
+        $ui-body-border-width: 0,
+        $ui-header-color: #333333,
+        $ui-header-font-size: 14px,
+        $ui-header-font-weight: 700,
+        $ui-header-padding: 8px 8px 8px 10px,
+        $ui-header-border-width: 0 0 1px 0,
+        $ui-header-border-color: #333333,
+        $ui-header-border-style: dotted,
+        $ui-header-inner-border-width: 0 0 1px 0,
+        $ui-header-inner-border-color: #E4E4E4,
+        $ui-header-background-color: #FFFFFF,
+        $ui-header-line-height: 20px
+);
+
+.#{$prefix}panel-header-title-secondary.#{$prefix}title-align-left {
+  padding-right: 20px;
+}
+
+// 右侧依靠的面板
+@include extjs-panel-ui(
+        $ui: 'dockedright',
+        $ui-body-background-color: #f2f2f5,
+        $ui-body-border-width: 0,
+        $ui-header-color: #333333,
+        $ui-header-font-size: 14px,
+        $ui-header-font-weight: 700,
+        $ui-header-padding: 8px 8px 8px 10px,
+        $ui-header-border-width: 0 0 1px 0,
+        $ui-header-border-color: #333333,
+        $ui-header-border-style: dotted,
+        $ui-header-inner-border-width: 0 0 1px 0,
+        $ui-header-inner-border-color: #E4E4E4,
+        $ui-header-background-color: #f2f2f5,
+        $ui-header-line-height: 20px
+);
+
+.#{$prefix}panel-secondary {
+  background-color: #FFFFFF;
+}
+
+/** 消息面板的样式*/
+@include extjs-panel-ui(
+        $ui: 'message',
+        $ui-body-background-color: #FFFDD7,
+        $ui-body-border-width: 1px,
+        $ui-border-color: #FC3,
+        $ui-header-color: #333333,
+        $ui-header-font-size: 14px,
+        $ui-header-font-weight: 400,
+        $ui-header-border-width: 0 0 1px 0,
+        $ui-header-border-color: #333333,
+        $ui-header-border-style: dotted,
+        $ui-header-background-color: #FFFDD7
+);
+
+/** 与链接式的tabPanel配合使用*/
+@include extjs-panel-ui(
+        $ui: 'link',
+        $ui-body-background-color: #FFFFFF,
+        $ui-header-color: #333333,
+        $ui-header-font-size: 16px,
+        $ui-header-font-weight: 400,
+        $ui-header-inner-border-width: 0 0 1px 0,
+        $ui-header-inner-border-color: #E2E2E2,
+        $ui-header-background-color: #FFFFFF
+);
+
+.#{$prefix}panel-header-title-link.#{$prefix}title-align-left {
+  padding-right: 20px;
+}
+
+.#{$prefix}panel-header.#{$prefix}panel-header-link {
+  background-color: #f4f7fd;
+  border-left: 6px solid #80ace6 !important;
+}
+
+/** 与链接式的tabPanel配合使用*/
+@include extjs-panel-ui(
+        $ui: 'secondarylink',
+        $ui-body-background-color: #FFFFFF,
+        $ui-body-border-width: 0,
+        $ui-header-color: #333333,
+        $ui-header-font-size: 14px,
+        $ui-header-font-weight: 700,
+        $ui-header-padding: 8px 8px 8px 10px,
+        $ui-header-border-width: 0 0 1px 0,
+        $ui-header-border-color: #333333,
+        $ui-header-border-style: dotted,
+        $ui-header-inner-border-width: 0 0 1px 0,
+        $ui-header-inner-border-color: #E4E4E4,
+        $ui-header-background-color: #FFFFFF,
+        $ui-header-line-height: 20px
+);
+
+.#{$prefix}panel-header-title-secondarylink.#{$prefix}title-align-left {
+  padding-right: 20px;
+}

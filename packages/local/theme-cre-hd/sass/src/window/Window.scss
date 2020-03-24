@@ -1,0 +1,22 @@
+@include extjs-window-ui(
+        $ui: 'image',
+        $ui-background-color: rgba(111, 111, 111, 0.1),
+        $ui-body-background-color: rgba(111, 111, 111, 0.1),
+        $ui-border-color: rgba(111, 111, 111, 0.1),
+        $ui-border-color: rgba(111, 111, 111, 0.1),
+        $ui-header-background-color: rgba(111, 111, 111, 0.1)
+);
+
+.#{$prefix}window-body-modal .#{$prefix}autocontainer-outerCt .#{$prefix}autocontainer-innerCt {
+  vertical-align: middle;
+}
+
+.#{$prefix}window-header-image .#{$prefix}box-inner .#{$prefix}box-target .#{$prefix}tool .#{$prefix}tool-close {
+  width: 32px;
+  height: 32px;
+  font-size: 28px;
+}
+
+.#{$prefix}window-image .#{$prefix}autocontainer-innerCt {
+  vertical-align: middle;
+}

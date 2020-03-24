@@ -1,0 +1,36 @@
+.#{$prefix}field-compare-changed {
+  border-color: #D3FAE0 !important;
+  background-color: #D3FAE0 !important;
+}
+
+.#{$prefix}tab.#{$prefix}field-compare-changed {
+  border-radius: 0;
+}
+
+.#{$prefix}field-compare-append {
+  border-color: #ffdddd !important;
+  background-color: #ffdddd !important;
+}
+
+.#{$prefix}btn-toggle-small.#{$prefix}field-compare-append {
+  border-color: #FF8080 !important;
+  background-color: #FF8080 !important;
+}
+
+.#{$prefix}tab.#{$prefix}field-compare-append {
+  border-radius: 0;
+}
+
+.#{$prefix}field-compare-cancel {
+  border-color: #E2E2E2 !important;
+  background-color: #E2E2E2 !important;
+}
+
+.#{$prefix}btn-toggle-small.#{$prefix}field-compare-cancel {
+  border-color: #999999 !important;
+  background-color: #999999 !important;
+}
+
+.#{$prefix}tab.#{$prefix}field-compare-cancel {
+  border-radius: 0;
+}

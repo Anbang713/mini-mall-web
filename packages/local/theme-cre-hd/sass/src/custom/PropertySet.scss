@@ -1,0 +1,35 @@
+.#{$prefix}panel.propertySet {
+  border: 1px transparent solid;
+}
+
+.#{$prefix}field.propertySet {
+  border: 1px transparent solid;
+}
+
+.#{$prefix}field.propertySet-disabled {
+  opacity: 0.5;
+}
+
+.#{$prefix}field.propertySet.#{$prefix}form-readonly .x-form-text-field-body input {
+  background-color: #FFF;
+}
+
+.#{$prefix}field.propertySet.propertySet-selected {
+  border-color: #3892d4;
+}
+
+.#{$prefix}field.propertySet .#{$prefix}form-trigger-wrap-default.#{$prefix}form-trigger-wrap-focus {
+  border-color: #b0b0b0 #d0d0d0 #d0d0d0 !important;
+}
+
+.#{$prefix}panel.propertySet.propertySet-selected {
+  border: 1px #3892d4 solid;
+}
+
+.#{$prefix}dd-drag-current.propertySet-dragdrop .#{$prefix}panel-body {
+  background-color: transparent;
+}
+
+.#{$prefix}dd-drag-current.propertySet-dragdrop .#{$prefix}form-trigger-wrap {
+  display: none;
+}

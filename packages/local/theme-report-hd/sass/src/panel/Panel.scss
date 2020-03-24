@@ -1,0 +1,7 @@
+/** 主要的*/
+@include extjs-panel-ui(
+        $ui: 'report',
+        $ui-header-icon-width: 250px,
+        $ui-header-icon-height: 80px,
+        $ui-header-font-size: 30px
+);

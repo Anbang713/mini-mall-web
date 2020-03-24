@@ -1,0 +1,19 @@
+.tree-concise .#{$prefix}grid-item-focused .#{$prefix}grid-cell-inner:before {
+  display: none;
+}
+
+.x-tree-icon.x-tree-icon-custom.fa.fa-sitemap:before {
+  content: "\f0e8";
+}
+
+.x-tree-icon.x-tree-icon-custom.fa.fa-institution:before, .x-tree-icon.x-tree-icon-custom.fa.fa-bank:before, .x-tree-icon.x-tree-icon-custom.fa.fa-university:before {
+  content: "\f19c";
+}
+
+.x-tree-icon.x-tree-icon-custom.fa.fa-building:before {
+  content: "\f1ad";
+}
+
+.x-tree-icon.x-tree-icon-custom.fa.fa-columns:before {
+  content: "\f0db";
+}

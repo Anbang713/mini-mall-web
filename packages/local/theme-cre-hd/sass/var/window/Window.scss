@@ -1,0 +1,12 @@
+$window-header-background-color: #FFF;
+$window-header-font-weight: 700;
+$window-header-padding: 20px 15px 0 15px;
+$window-border-width: 0;
+$window-padding: 10px;
+$window-body-color: #333333;
+
+.#{$prefix}window-default {
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) !important;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) !important;
+}

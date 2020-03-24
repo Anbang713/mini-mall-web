@@ -1,0 +1,38 @@
+@include extjs-text-field-ui(
+        $ui: 'searchtag',
+        $ui-trigger-glyph: $fa-var-close,
+        $ui-border-width: 0,
+        $ui-border-color: transparent,
+        $ui-trigger-glyph-color: #4e97ff,
+        $ui-trigger-border-color: #1EBDA7,
+        $ui-trigger-border-width: 1px 1px 1px 0
+)
+
+.#{$prefix}form-text-wrap-searchtag {
+  border: 1px solid #1EBDA7;
+}
+
+.#{$prefix}form-trigger-searchtag {
+  &:hover {
+    background-color: #4e97ff;
+    color: #FFF;
+  }
+}
+
+.#{$prefix}searchtag-picker {
+  border: 1px solid #1EBDA7;
+  padding: 0 !important;
+}
+
+.#{$prefix}searchtag-picker-select .#{$prefix}btn-inner {
+  color: #4e97ff;
+}
+
+.x-form-trigger.fa.fa-times-circle:before {
+  content: "\f057";
+  color: #888888;
+}
+.x-form-trigger.fa.fa-ellipsis-h:before {
+  content: "\f141";
+  color: #888888;
+}

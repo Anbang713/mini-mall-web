@@ -1,0 +1,561 @@
+.#{$prefix}toolbar-item.#{$prefix}btn-default-toolbar-small {
+  background-image: none;
+}
+
+.#{$prefix}toolbar-item.#{$prefix}btn-default-toolbar-medium {
+  background-image: none;
+}
+
+.#{$prefix}btn.#{$prefix}btn-revoke {
+  cursor: default;
+  pointer-events: none;
+}
+
+/** 主要样式按钮*/
+@include extjs-button-large-ui(
+        $ui: 'primary',
+        $background-color: #4e97ff,
+        $background-color-pressed: #477AA6,
+        $border-color: #4e97ff,
+        $color: #FFF,
+        $glyph-color: #FFF
+);
+@include extjs-button-medium-ui(
+        $ui: 'primary',
+        $background-color: #4e97ff,
+        $background-color-pressed: #477AA6,
+        $border-color: #4e97ff,
+        $color: #FFF,
+        $glyph-color: #FFF
+);
+@include extjs-button-small-ui(
+        $ui: 'primary',
+        $background-color: #4e97ff,
+        $background-color-pressed: #477AA6,
+        $border-color: #4e97ff,
+        $color: #FFF,
+        $glyph-color: #FFF
+);
+.#{$prefix}btn-inner-primary-small {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.#{$prefix}btn-inner-primary-medium {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+/**次要按钮*/
+@include extjs-button-small-ui(
+        $ui: 'secondary',
+        $background-color: #596273,
+        $background-color-pressed: #334059,
+        $border-color: #596273,
+        $color: #fff,
+        $glyph-color: #FFF
+);
+@include extjs-button-medium-ui(
+        $ui: 'secondary',
+        $background-color: #596273,
+        $background-color-pressed: #334059,
+        $border-color: #596273,
+        $color: #fff,
+        $glyph-color: #FFF
+);
+
+/** 警告按钮*/
+@include extjs-button-small-ui(
+        $ui: 'danger',
+        $background-color: #ED4A52,
+        $background-color-pressed: #cc3333,
+        $border-color: #ED4A52,
+        $color: #FFF,
+        $glyph-color: #FFF
+);
+@include extjs-button-medium-ui(
+        $ui: 'danger',
+        $background-color: #ED4A52,
+        $background-color-pressed: #cc3333,
+        $border-color: #ED4A52,
+        $color: #FFF,
+        $glyph-color: #FFF
+);
+
+/** 无边框凸起按钮*/
+@include extjs-button-small-ui(
+        $ui: 'bulge',
+        $border-color: transparent,
+        $background-color: transparent,
+        $background-color-pressed: transparent,
+        $color: #333333,
+        $glyph-color: #333333
+);
+.#{$prefix}btn-bulge-small:hover {
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) !important;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+/** 无边框凸起按钮*/
+@include extjs-button-medium-ui(
+        $ui: 'bulge',
+        $border-color: transparent,
+        $background-color: transparent,
+        $background-color-pressed: transparent,
+        $color: #333333,
+        $glyph-color: #333333
+);
+.#{$prefix}btn-bulge-medium:hover {
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) !important;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+/** 无边框按钮*/
+@include extjs-button-small-ui(
+        $ui: 'noborder',
+        $border-color: transparent,
+        $background-color: transparent,
+        $background-color-pressed: transparent,
+        $color: #333333,
+        $glyph-color: #333333
+);
+@include extjs-button-medium-ui(
+        $ui: 'noborder',
+        $border-color: transparent,
+        $background-color: transparent,
+        $background-color-pressed: transparent,
+        $color: #333333,
+        $glyph-color: #333333
+);
+
+/** 链接样式按钮*/
+@include extjs-button-small-ui(
+        $ui: 'link',
+        $border-color: transparent,
+        $background-color: transparent,
+        $color: #4e97ff,
+        $color-disabled: #999999,
+        $glyph-color: #4e97ff
+);
+
+.#{$prefix}btn.#{$prefix}btn-disabled.#{$prefix}btn-link-small .#{$prefix}btn-icon-el-link-small {
+  color: #999999;
+}
+
+.#{$prefix}btn-inner-link-small:hover {
+  color: #4e97ff;
+  text-decoration: underline;
+}
+
+/** 链接样式按钮*/
+@include extjs-button-medium-ui(
+        $ui: 'link',
+        $border-color: transparent,
+        $background-color: transparent,
+        $color: #4e97ff,
+        $color-disabled: #999999,
+        $glyph-color: #4e97ff
+);
+
+.#{$prefix}btn.#{$prefix}btn-disabled.#{$prefix}btn-link-medium .#{$prefix}btn-icon-el-link-medium {
+  color: #999999;
+}
+
+.#{$prefix}btn-inner-link-medium:hover {
+  color: #4e97ff;
+  text-decoration: underline;
+}
+
+/** 链接样式按钮*/
+@include extjs-button-small-ui(
+        $ui: 'link-danger',
+        $border-color: transparent,
+        $background-color: transparent,
+        $color: #CC3333,
+        $color-disabled: #999999,
+        $glyph-color: #CC3333
+);
+
+.#{$prefix}btn.#{$prefix}btn-disabled.#{$prefix}btn-link-danger-small .#{$prefix}btn-icon-el-link-danger-small {
+  color: #999999;
+}
+
+.#{$prefix}btn-inner-link-danger-small:hover {
+  color: #CC3333;
+  text-decoration: underline;
+}
+
+/** hint样式按钮*/
+@include extjs-button-small-ui(
+        $ui: 'hint',
+        $border-color: transparent,
+        $background-color: transparent,
+        $color: #747474,
+        $color-disabled: #999999,
+        $color-over: #C3C3C3
+);
+.#{$prefix}btn-hint-small:hover {
+  color: #C3C3C3;
+}
+
+/*************************************** 状态按钮样式***************************************/
+@include extjs-button-small-ui(
+        $ui: 'tag',
+        $border-width: 0,
+        $inner-border-width-over: 0,
+        $inner-border-width-focus: 0,
+        $inner-border-width-focus-over: 0,
+        $inner-border-width-focus-pressed: 0,
+        $inner-border-width-pressed: 0,
+        $inner-border-width-disabled: 0,
+        $background-color: transparent,
+        $background-color-over: transparent,
+        $background-color-disabled: #4e97ff,
+        $color: #444444,
+        $color-over: #4e97ff,
+        $color-disabled: #FFFFFF,
+        $font-size-disabled: 13px,
+        $font-weight-disabled: 500,
+        $opacity-disabled: 1,
+        $padding: 3px
+);
+.#{$prefix}btn-tag-small {
+  border-radius: 15px !important;
+  padding: 3px 6px 3px 6px !important;
+}
+
+/*************************************类Tab按钮**************************************/
+@include extjs-button-small-ui(
+        $ui: 'tab',
+        $border-width: 0 0 2px 0,
+        $border-color: transparent,
+        $border-color-disabled: #4e97ff,
+        $background-color: transparent,
+        $background-color-over: transparent,
+        $background-color-disabled: transparent,
+        $color: #333333,
+        $color-over: #333333,
+        $color-disabled: #4e97ff,
+        $opacity-disabled: 1,
+        $padding: 5px 1px 10px 1px
+);
+
+/*************************************用于切换的按钮**************************************/
+@include extjs-button-small-ui(
+        $ui: 'toggle',
+        $border-width: 1px,
+        $border-color: #CDCDCD,
+        $border-color-pressed: #39C9C9,
+        $background-color: #FFFFFF,
+        $background-color-over: #FFFFFF,
+        $background-color-disabled: #EBEBEB,
+        $background-color-pressed: #39C9C9,
+        $background-color-focus-pressed: #39C9C9,
+        $color: #333333,
+        $color-over: #333333,
+        $color-disabled: #999999,
+        $color-pressed: #FFFFFF,
+        $opacity-disabled: 1
+);
+
+/******************************************************************************/
+
+/** 添加按钮*/
+@include extjs-button-small-ui(
+        $ui: 'appendItem',
+        $border-width: 0,
+        $background-color: transparent,
+        $color: #81CB31,
+        $glyph-color: #81CB31,
+        $opacity-disabled: 0.3,
+        $padding: 2px
+);
+
+/** 删除按钮*/
+@include extjs-button-small-ui(
+        $ui: 'removeItem',
+        $border-width: 0,
+        $background-color: transparent,
+        $color: #ED4A52,
+        $glyph-color: #ED4A52,
+        $opacity-disabled: 0.3,
+        $padding: 2px
+);
+
+@include extjs-button-small-ui(
+        $ui: 'searchtag',
+        $background-color: transparent,
+        $border-color: #1EBDA7,
+        $border-width: 0 0 0 1px,
+        $color: #4e97ff,
+        $glyph-color: #4e97ff,
+        $padding: 0
+);
+.#{$prefix}btn-searchtag-small {
+  &:hover {
+    background-color: #4e97ff !important;
+  }
+  &:hover .#{$prefix}btn-icon-el-searchtag-small {
+    color: #FFF !important;
+  }
+}
+
+/*********************************** 定制样式 *************************************/
+@include extjs-button-large-ui(
+        $ui: 'bpm-comments',
+        $background-color: transparent,
+        $border-color: transparent,
+        $border-width: 1px,
+        $color: #319FDF,
+        $glyph-color: #4e97ff
+);
+.#{$prefix}btn-bpm-comments-large {
+  &:hover {
+    background-color: #4e97ff !important;
+  }
+  &:hover .#{$prefix}btn-icon-el-bpm-comments-large {
+    color: #FFF !important;
+  }
+}
+
+@include extjs-button-large-ui(
+        $ui: 'bpm-sitemap',
+        $background-color: transparent,
+        $border-color: transparent,
+        $border-width: 1px,
+        $color: #3188DF,
+        $glyph-color: #4e97ff
+);
+.#{$prefix}btn-bpm-sitemap-large {
+  &:hover {
+    background-color: #4e97ff !important;
+  }
+  &:hover .#{$prefix}btn-icon-el-bpm-sitemap-large {
+    color: #FFF !important;
+  }
+}
+
+@include extjs-button-large-ui(
+        $ui: 'bpm-list',
+        $background-color: transparent,
+        $border-color: transparent,
+        $border-width: 1px,
+        $color: #1C9E74,
+        $glyph-color: #1c9e74
+);
+.#{$prefix}btn-bpm-list-large {
+  &:hover {
+    background-color: #4e97ff !important;
+  }
+  &:hover .#{$prefix}btn-icon-el-bpm-list-large {
+    color: #FFF !important;
+  }
+}
+
+.#{$prefix}btn-inner-bpm-list-large {
+  background-color: #ff6161;
+  color: #fff;
+  line-height: 1;
+  border-radius: 8px;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  width: 30px;
+  padding: 1px 0;
+  margin: 0;
+}
+
+@include extjs-button-small-ui(
+        $ui: 'navigate',
+        $background-color: #FFFFFF,
+        $background-color-over: rgba(215, 11, 28, 0.5),
+        $background-color-pressed: #d70b1c,
+        $background-color-focus: #d70b1c,
+        $background-color-focus-over: #d70b1c,
+        $background-color-disabled: #d70b1c,
+        $border-color: #E2E2E2,
+        $border-width: 0 0 1px 0,
+        $border-color: #CDCDCD,
+        $color: #3188DF,
+        $color-over: #FFFFFF,
+        $color-focus: #FFFFFF,
+        $color-focus-pressed: #FFFFFF,
+        $color-pressed: #FFFFFF,
+        $glyph-color: #4e97ff,
+        $text-padding: 5px,
+        $padding: 10px 5px
+);
+
+/** 图片使用的样式按钮*/
+@include extjs-button-small-ui(
+        $ui: 'image',
+        $border-color: #E0E0E0,
+        $background-color: transparent,
+        $padding: 0
+);
+
+/*********************************** 提供给图片删除使用 *************************************/
+@include extjs-button-large-ui(
+        $ui: 'image-window-close',
+        $background-color: rgba(49, 50, 52, 0.724),
+        $background-color-over: rgba(250, 0, 0, 0.8),
+        $border-color: transparent,
+        $border-width: 0px,
+        $color: #FFFFFF,
+        $font-size: 32px,
+        $line-height: 22px,
+        $text-padding: 0,
+        $padding: 0
+);
+.#{$prefix}btn-image-window-close-large {
+  border-radius: 25px;
+  width: 36px;
+  height: 36px;
+}
+
+.#{$prefix}btn-inner-image-window-close-large {
+  height: 28px;
+}
+
+@include extjs-button-large-ui(
+        $ui: 'image-window-arrow',
+        $background-color: transparent,
+        $border-width: 0px,
+        $color: #FFFFFF,
+        $text-padding: 0,
+        $padding: 0
+);
+.#{$prefix}btn-image-window-arrow-large {
+  border-radius: 25px;
+  width: 48px;
+  height: 48px;
+}
+
+.#{$prefix}btn-image-window-arrow-large {
+  background: url(images/arrow.png) no-repeat center center !important;
+}
+
+.#{$prefix}btn-over.#{$prefix}btn-image-window-arrow-large {
+  background: url(images/arrow.png) no-repeat center center !important;
+}
+
+.#{$prefix}btn-focus.#{$prefix}btn-image-window-arrow-large {
+  background: url(images/arrow.png) no-repeat center center !important;
+}
+
+.#{$prefix}btn.#{$prefix}btn-pressed.#{$prefix}btn-image-window-arrow-large {
+  background: url(images/arrow.png) no-repeat center center !important;
+}
+
+@include extjs-button-large-ui(
+        $ui: 'image-tool',
+        $border-color: transparent,
+        $background-color: transparent,
+        $color: #FFFFFF,
+        $color-disabled: #999999,
+        $color-over: #4e97ff,
+        $font-size: 20px,
+        $glyph-font-size: 22px,
+        $glyph-color: #FFFFFF,
+        $padding: 5px 3px,
+        $text-padding: 0
+);
+
+.#{$prefix}btn-icon-el-image-tool-large:hover {
+  color: #4e97ff;
+}
+
+/*********************************** 提供给地址控件的按钮使用 *************************************/
+@include extjs-button-small-ui(
+        $ui: 'district',
+        $border-width: 1px,
+        $border-color: transparent,
+        $background-color: transparent,
+        $background-color-over: #FFF8F3,
+        $background-color-disabled: #f60,
+        $color: #333333,
+        $color-over: #f60,
+        $color-disabled: #FFFFFF,
+        $font-weight-disabled: 500,
+        $opacity-disabled: 1,
+        $padding: 3px
+);
+
+/*********************************** filebutton的样式居然不是放在button中 *************************************/
+.#{$prefix}form-file-btn {
+  overflow: hidden;
+  position: relative;
+}
+
+.#{$prefix}form-file-input {
+  border: 0; // disables the focus border in old IE
+  position: absolute;
+  cursor: pointer;
+  // some browsers (I'm looking at you Firefox) add extra space around the file button
+  // that can't be removed using CSS. Others (webkit) add default margin.  Rather than
+  // try to handle each browser's unique case, we just negatively position the input to
+  // ensure that there is no extra space between it and the Button's edge
+  top: -2px;
+  right: -2px;
+  @include opacity(0);
+  /* Yes, there's actually a good reason for this...
+   * If the configured buttonText is set to something longer than the default,
+   * then it will quickly exceed the width of the hidden file input's "Browse..."
+   * button, so part of the custom button's clickable area will be covered by
+   * the hidden file input's text box instead. This results in a text-selection
+   * mouse cursor over that part of the button, at least in Firefox, which is
+   * confusing to a user. Giving the hidden file input a huge font-size makes
+   * the native button part very large so it will cover the whole clickable area.
+   */
+  font-size: 1000px;
+}
+
+@include extjs-button-small-ui(
+        $ui: 'image-upload',
+        $border-color: #E0E0E0,
+        $background-color: transparent,
+        $padding: 0
+);
+.#{$prefix}btn-image-upload-small {
+  background-image: url(images/image-upload.jpg);
+}
+
+.#{$prefix}btn-over.#{$prefix}btn-image-upload-small {
+  background-image: url(images/image-upload.jpg);
+}
+
+.#{$prefix}btn-focus.#{$prefix}btn-image-upload-small {
+  background-image: url(images/image-upload.jpg);
+}
+
+.#{$prefix}btn.#{$prefix}btn-pressed.#{$prefix}btn-image-upload-small {
+  background-image: url(images/image-upload.jpg);
+}
+
+.#{$prefix}btn.#{$prefix}btn-disabled.#{$prefix}btn-image-upload-small {
+  background-image: url(images/image-upload.jpg);
+}
+
+/************************************************************************/
+@include extjs-button-small-ui(
+        $ui: 'concise',
+        $border-width: 1px,
+        $border-color: transparent,
+        $border-color-over: #4e97ff,
+        $background-color: #FFF,
+        $color: #333,
+        $color-over: #4e97ff,
+        $glyph-color: #333,
+        $padding: 3px 8px
+);
+
+.#{$prefix}field.#{$prefix}form-item.#{$prefix}btn {
+  border-radius: 2px;
+  padding: 2px 2px 2px 2px;
+  border-width: 0;
+  border-style: solid;
+  background-color: transparent;
+}

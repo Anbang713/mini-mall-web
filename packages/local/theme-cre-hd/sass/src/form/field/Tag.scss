@@ -1,0 +1,82 @@
+@include extjs-label-ui(
+        $ui: 'singletag'
+);
+@include extjs-text-field-ui(
+        $ui: 'singletag'
+);
+@include extjs-tag-field-ui(
+        $ui: 'singletag',
+        $ui-item-background-color: #FFFFFF,
+        $ui-item-over-background-color: #FFFFFF,
+        $ui-item-selected-background-color: #FFFFFF,
+        $ui-item-border-width: 0
+);
+.#{$prefix}singletag-item-text {
+  cursor: default;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.#{$prefix}singletag-item {
+  padding: 0 0 0 5px !important;
+  margin: 1px 3px 1px 0 !important;
+  line-height: 19px !important;
+}
+
+.#{$prefix}singletag-singleselect {
+  line-height: 21px !important;
+  min-height: 21px !important;
+}
+
+.#{$prefix}singletag-input {
+  margin: 0 !important;
+  line-height: 21px !important;
+  min-height: 21px !important;
+  width: 100%;
+}
+
+.#{$prefix}form-readonly .#{$prefix}form-text-field-body .#{$prefix}form-text-singletag {
+  background-color: #e7edf4;
+}
+
+.#{$prefix}form-readonly .#{$prefix}form-text-field-body .#{$prefix}tagfield-item {
+  background-color: #e7edf4;
+}
+
+.#{$prefix}field.#{$prefix}field-multitag.#{$prefix}form-readonly .#{$prefix}form-field {
+  background-color: #e7edf4;
+}
+
+@include extjs-label-ui(
+        $ui: 'multitag'
+);
+@include extjs-text-field-ui(
+        $ui: 'multitag'
+);
+@include extjs-tag-field-ui(
+        $ui: 'multitag'
+);
+.#{$prefix}field-multitag .#{$prefix}form-text-multitag.#{$prefix}tagfield {
+  padding: 1px 0 0 4px;
+}
+
+.#{$prefix}field-multitag .#{$prefix}multitag-item {
+  background-color: #CFE3F5;
+  line-height: 18px;
+}
+
+.#{$prefix}field-multitag .#{$prefix}multitag-item-close {
+  top: 2px !important;
+  font: 14px/1 FontAwesome;
+
+  &:before {
+    color: #4e97ff;
+    content: "\f057";
+  }
+}
+
+// 已输入的singletag下的输入框，只需要10px
+.x-field-singletag.inputted .x-tagfield-input-field {
+  width: 5px;
+}

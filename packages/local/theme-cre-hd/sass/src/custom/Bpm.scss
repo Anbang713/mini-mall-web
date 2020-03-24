@@ -1,0 +1,151 @@
+.bpm-comment-list {
+}
+
+.bpm-comment-mine {
+}
+
+.clearfix:after {
+  content: " .";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+.bpm-comment-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(images/useravatar.png);
+}
+
+.bpm-comment-list .bpm-comment-logo {
+}
+
+.bpm-comment-mine .bpm-comment-logo {
+}
+
+.bpm-comment-mine .bpm-comment-operator {
+  float: right;
+  padding: 10px;
+}
+
+.bpm-comment-list .bpm-comment-operator {
+  float: left;
+  padding: 10px;
+}
+
+.bpm-comment-mine .bpm-comment-content {
+  float: right;
+  padding: 10px;
+}
+
+.bpm-comment-list .bpm-comment-content {
+  float: left;
+  padding: 10px;
+}
+
+.bpm-comment-userName {
+  text-align: center;
+  width: 50px;
+  word-wrap: break-word;
+}
+
+/*边框气泡*/
+.bpm-comment-bubble {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.bpm-comment-list .bpm-comment-bubble {
+  border: 1px solid #a5d01b;
+  background: #c8f064;
+  display: inline-block;
+}
+
+.bpm-comment-mine .bpm-comment-bubble {
+  border: 1px solid #00bfff;
+  background: #e0ffff;
+  display: inline-block;
+  float: right;
+}
+
+.bpm-comment-mine .bpm-comment-dot {
+  padding: 5px 3px 5px 3px;
+  word-wrap: break-word
+}
+
+.bpm-comment-list .bpm-comment-dot {
+  padding: 5px 23px 5px 3px;
+  word-wrap: break-word
+}
+
+.bpm-comment-mine .bpm-comment-additional {
+  color: #999999;
+  text-align: right;
+  float: right;
+  clear: both;
+}
+
+.bpm-comment-list .bpm-comment-additional {
+  color: #999999;
+}
+
+.bpm-comment-attachment {
+  padding: 1px;
+  display: block
+}
+
+.bpm-comment-tale {
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  overflow: hidden !important;
+  top: 15px;
+  z-index: 2;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.bpm-comment-list .bpm-comment-tale {
+  left: -1px;
+  background-color: #c8f064;
+  border-color: #a5d01b;
+  margin-left: 70px;
+}
+
+.bpm-comment-mine .bpm-comment-tale {
+  right: -11px;
+  background-color: #e0ffff;
+  border-color: #00bfff;
+  margin-right: 80px;
+}
+
+.bpm-comment-list .radius-border {
+  position: absolute;
+  background-color: #EFF0F2;
+  top: -29px;
+  left: -94px;
+  height: 160px;
+  width: 160px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-right-radius: 154px;
+  border-color: #a5d01b;
+}
+
+.bpm-comment-mine .radius-border {
+  position: absolute;
+  background-color: #EFF0F2;
+  top: -29px;
+  right: -94px;
+  height: 160px;
+  width: 160px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-top-left-radius: 154px;
+  border-color: #00bfff;
+}

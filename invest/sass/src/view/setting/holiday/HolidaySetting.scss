@@ -1,0 +1,143 @@
+.setting-calendar {
+  position: relative;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  width: 212px;
+}
+
+.setting-calendar-title {
+  padding: 10px;
+  text-align: center;
+  background-color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+}
+
+.setting-calendar-header {
+  padding: 4px 6px;
+  text-align: center;
+  background-color: #f6f6f6;
+  position: relative;
+}
+
+.setting-calendar-column-header {
+  padding: 2px;
+  width: 30px;
+  color: #333;
+  text-align: center;
+  background-color: #fff;
+}
+
+.setting-calendar-column-header-inner {
+  line-height: 25px;
+  font-weight: normal;
+  padding: 0 9px 0 0;
+}
+
+.setting-calendar-inner {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+}
+
+.setting-calendar-cell {
+  padding: 2px;
+  text-align: right;
+  //border-top: 1px solid #c8cacc;
+}
+
+.setting-calendar-date {
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+div.setting-calendar-date:hover {
+  background-color: #ebf4fb;
+}
+
+div.setting-calendar-date span {
+  display: block;
+  text-align: center;
+}
+
+.setting-calendar-date-solar {
+  font-size: 14px;
+}
+
+/** 周末用红色*/
+.setting-calendar-date-solar-weekend {
+  color: #FF0000;
+  font-size: 14px;
+}
+
+.setting-calendar-date-lunar {
+  color: #999;
+}
+
+/** 节气用红色*/
+.setting-calendar-date-lunar-term {
+  color: #FF0000;
+}
+
+.setting-calendar-selected div.setting-calendar-date {
+  background-color: #689FDB;
+  border: 1px solid #64b8d4;
+}
+
+/** 选中后，显示白色*/
+.setting-calendar-selected span {
+  color: #FFF !important;
+}
+
+/** 待设定的样式*/
+.setting-calendar-setting div.setting-calendar-date {
+  background-color: #999;
+  border: 1px solid #c1c1c1;
+}
+
+.setting-calendar-setting span {
+  color: #FFF !important;
+}
+
+/** 普通节假日的样式*/
+.setting-calendar-normal div.setting-calendar-date {
+  background-color: #689FDB;
+  border: 1px solid #64b8d4;
+}
+
+.setting-calendar-normal span {
+  color: #FFF !important;
+}
+
+/** 法定节假日的样式*/
+.setting-calendar-legal div.setting-calendar-date {
+  background-color: #ffcaca;
+  border: 1px solid #ffcaca;
+}
+
+.setting-calendar-date-legal {
+  background-color: #FF4433;
+  color: #FFF;
+  width: 40%;
+  text-align: left;
+}
+
+/**空白日期透明，用于占位*/
+.setting-calendar-prevday .setting-calendar-date,
+.setting-calendar-nextday .setting-calendar-date {
+  color: transparent;
+  cursor: default;
+}
+
+.setting-calendar-prevday span,
+.setting-calendar-nextday span {
+  background-color: #FFF;
+  color: transparent !important;
+}
+
+.setting-calendar-prevday div.setting-calendar-date:hover,
+.setting-calendar-nextday div.setting-calendar-date:hover {
+  background-color: #FFF;
+  color: transparent;
+}

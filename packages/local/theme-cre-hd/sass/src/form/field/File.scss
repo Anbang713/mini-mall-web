@@ -1,0 +1,9 @@
+@include extjs-label-ui(
+        $ui: 'buttonOnly'
+);
+@include extjs-text-field-ui(
+        $ui: 'buttonOnly'
+);
+.#{$prefix}form-trigger-buttonOnly {
+  text-align: left;
+}

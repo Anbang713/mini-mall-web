@@ -1,0 +1,49 @@
+.#{$prefix}tool-img {
+  color: #444444 !important;
+}
+
+/** 提供模块使用的工具栏样式*/
+@include extjs-toolbar-ui(
+        $ui: 'frame',
+        $background-color: transparent
+);
+.#{$prefix}toolbar.#{$prefix}toolbar-frame {
+  padding: 5px 0 5px 8px;
+}
+
+/** 嵌入的，主要适用于放置于其他工具栏中*/
+@include extjs-toolbar-ui(
+        $ui: 'embed',
+        $background-color: transparent
+);
+.#{$prefix}toolbar.#{$prefix}toolbar-embed {
+  padding: 0;
+}
+
+/** 侧边栏专用*/
+@include extjs-toolbar-ui(
+        $ui: 'sidebar'
+);
+.#{$prefix}toolbar.#{$prefix}toolbar-sidebar {
+  padding: 0;
+}
+
+/** 与消息面板配合使用*/
+@include extjs-toolbar-ui(
+        $ui: 'message',
+        $vertical-spacing: 0,
+        $background-color: #FFFDD7
+);
+.#{$prefix}toolbar.#{$prefix}toolbar-message {
+  padding: 0;
+}
+
+/** 用于拖拽的工具栏，如列显示设置中*/
+@include extjs-toolbar-ui(
+        $ui: 'drag',
+        $border-color: #D0D0D0,
+        $border-width: 1px,
+        $vertical-spacing: 0,
+        $horizontal-spacing: 1px,
+        $background-color: #F7F7F7
+);

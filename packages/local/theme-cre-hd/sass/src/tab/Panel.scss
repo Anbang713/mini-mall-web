@@ -1,0 +1,137 @@
+@include extjs-tab-panel-ui(
+        $ui: 'frame',
+        $ui-bar-background-color: #F0F0F0,
+        $ui-tab-background-color: #EBEBEB,
+        $ui-tab-background-color-over: #EBEBEB,
+        $ui-tab-background-color-active: #FFFFFF,
+        $ui-tab-color: #333333,
+        $ui-tab-color-over: #333333,
+        $ui-tab-color-active: #333333,
+        $ui-tab-margin: 0,
+        $ui-tab-padding: 10px 30px,
+        $ui-strip-background-color: #E2E2E2,
+        $ui-strip-height: 1px,
+        $ui-bar-scroller-glyph-color: #4e97ff
+);
+
+@include extjs-tab-panel-ui(
+        $ui: 'primary',
+        $ui-bar-background-color: #F0F0F0,
+        $ui-tab-background-color: #EBEBEB,
+        $ui-tab-background-color-over: #EBEBEB,
+        $ui-tab-background-color-active: #FFFFFF,
+        $ui-tab-color: #333333,
+        $ui-tab-color-over: #333333,
+        $ui-tab-color-active: #333333,
+        $ui-tab-margin: 0,
+        $ui-tab-padding: 10px 30px,
+        $ui-strip-background-color: transparent,
+        $ui-strip-border-color: transparent,
+        $ui-strip-height: 1px,
+        $ui-bar-scroller-glyph-color: #4e97ff
+);
+.#{$prefix}tab-bar-top > .#{$prefix}tab-bar-body-primary {
+  padding-bottom: 0 !important;
+}
+
+/** 链接式*/
+@include extjs-tab-panel-ui(
+        $ui: 'link',
+        $ui-bar-padding: 0 4px 0 8px,
+        $ui-tab-background-color: transparent,
+        $ui-tab-background-color-over: transparent,
+        $ui-tab-background-color-active: transparent,
+        $ui-tab-border-width: 0 0 1px 0,
+        $ui-tab-border-color: transparent,
+        $ui-tab-border-color-active: #4e97ff,
+        $ui-tab-inner-border-width: 0,
+        $ui-tab-outline-width-focus: 0,
+        $ui-tab-font-size: 12px,
+        $ui-tab-font-weight: normal,
+        $ui-tab-font-weight-active: bold,
+        $ui-tab-font-weight-focus-active: bold,
+        $ui-tab-color: #999999,
+        $ui-tab-color-over: #4e97ff,
+        $ui-tab-color-active: #4e97ff,
+        $ui-tab-margin: 0px 5px 0px 5px,
+        $ui-tab-padding: 15px 0px 10px 0px,
+        $ui-strip-background-color: #E2E2E2,
+        $ui-strip-height: 1px,
+        $ui-bar-background-color: #f4f7fd,
+        $ui-bar-scroller-glyph-color: #4e97ff
+);
+
+@include extjs-tab-panel-ui(
+        $ui: 'secondarylink',
+        $ui-bar-padding: 0 4px 0 8px,
+        $ui-tab-background-color: transparent,
+        $ui-tab-background-color-over: transparent,
+        $ui-tab-background-color-active: transparent,
+        $ui-tab-border-width: 0 0 1px 0,
+        $ui-tab-border-color: transparent,
+        $ui-tab-border-color-active: #4e97ff,
+        $ui-tab-inner-border-width: 0,
+        $ui-tab-outline-width-focus: 0,
+        $ui-tab-font-size: 12px,
+        $ui-tab-font-weight: normal,
+        $ui-tab-font-weight-active: bold,
+        $ui-tab-font-weight-focus-active: bold,
+        $ui-tab-color: #999999,
+        $ui-tab-color-over: #4e97ff,
+        $ui-tab-color-active: #4e97ff,
+        $ui-tab-margin: 0px 5px 0px 5px,
+        $ui-tab-padding: 15px 0px 10px 0px,
+        $ui-strip-background-color: #E2E2E2,
+        $ui-strip-height: 1px,
+        $ui-bar-background-color: #FFFFFF,
+        $ui-bar-scroller-glyph-color: #4e97ff
+);
+
+/** 链接式*/
+@include extjs-tab-panel-ui(
+        $ui: 'secondary',
+        $ui-bar-padding: 0 4px 0 8px,
+        $ui-tab-background-color: transparent,
+        $ui-tab-background-color-over: transparent,
+        $ui-tab-background-color-active: transparent,
+        $ui-tab-border-width: 0 0 1px 0,
+        $ui-tab-border-color: transparent,
+        $ui-tab-border-color-active: #4e97ff,
+        $ui-tab-inner-border-width: 0,
+        $ui-tab-outline-width-focus: 0,
+        $ui-tab-font-size: 12px,
+        $ui-tab-font-weight: normal,
+        $ui-tab-font-weight-active: bold,
+        $ui-tab-font-weight-focus-active: bold,
+        $ui-tab-color: #999999,
+        $ui-tab-color-over: #4e97ff,
+        $ui-tab-color-active: #4e97ff,
+        $ui-tab-margin: 0px 5px 0px 5px,
+        $ui-tab-padding: 15px 0px 10px 0px,
+        $ui-strip-background-color: #E2E2E2,
+        $ui-strip-height: 1px,
+        $ui-bar-background-color: #f4f7fd,
+        $ui-bar-scroller-glyph-color: #4e97ff
+);
+
+/** 简约风格*/
+@include extjs-tab-panel-ui(
+        $ui: 'concise',
+        $ui-bar-background-color: #FFFFFF,
+        $ui-tab-background-color: #F0F0F0,
+        $ui-tab-background-color-over: #F0F0F0,
+        $ui-tab-background-color-active: #FFFFFF,
+        $ui-tab-border-width: 1px,
+        $ui-tab-border-color: #ccc,
+        $ui-tab-border-color-over: #ccc,
+        $ui-tab-border-color-active: #FFFFFF,
+        $ui-tab-font-size: 12px,
+        $ui-tab-font-weight: normal,
+        $ui-tab-color: #333333,
+        $ui-tab-color-over: #333333,
+        $ui-tab-color-active: #F60,
+        $ui-tab-margin: -1px 0 0 -1px,
+        $ui-tab-padding: 10px 35px,
+        $ui-strip-background-color: #FFF,
+        $ui-strip-height: 1px
+);

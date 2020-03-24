@@ -1,0 +1,29 @@
+.#{$prefix}form-display-field-default {
+  min-height: 21px;
+}
+
+.#{$prefix}display-field-link .#{$prefix}form-display-field {
+  min-height: 21px;
+  cursor: pointer;
+  color: #4e97ff;
+  text-decoration: none;
+}
+
+.#{$prefix}display-field-link .#{$prefix}form-display-field:hover {
+  cursor: pointer;
+  color: #4e97ff;
+  text-decoration: underline;
+}
+
+a.#{$prefix}display-field-link {
+  min-height: 21px;
+  cursor: pointer;
+  color: #4e97ff;
+  text-decoration: none;
+}
+
+a.#{$prefix}display-field-link:hover {
+  cursor: pointer;
+  color: #4e97ff;
+  text-decoration: underline;
+}

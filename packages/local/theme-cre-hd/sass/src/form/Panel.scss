@@ -1,0 +1,11 @@
+/** 表单的ui*/
+@include extjs-panel-ui(
+        $ui: 'form',
+        $ui-body-background-color: #FFFFFF,
+        $ui-header-background-color: #FFFFFF,
+        $ui-header-color: #333333,
+        $ui-header-font-size: 16px,
+        $ui-header-font-weight: 700,
+        $ui-header-inner-border-width: 0 0 1px 0,
+        $ui-header-inner-border-color: #E2E2E2
+);

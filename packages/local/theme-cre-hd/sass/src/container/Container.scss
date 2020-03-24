@@ -1,0 +1,9 @@
+ul.#{$prefix}container {
+  top: 0 !important;
+  padding: 0 !important;
+}
+
+li.#{$prefix}container {
+  display: inline;
+  float: left;
+}
