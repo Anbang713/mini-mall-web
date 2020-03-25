@@ -11,6 +11,22 @@ Ext.define('account.view.statement.view.StatementView', {
         formulas: {
             isEffect: function (get) {
                 return get('entity.state') == 'effect';
+            },
+            sumTotal: function (get) {
+                var details = get('entity.details');
+                var total = 0;
+                Ext.Array.each(details, function (detail) {
+                    total = total.add(detail['total']);
+                });
+                return Ext.util.Format.number(total, ',#.00');
+            },
+            sumSalesTotal: function (get) {
+                var details = get('entity.details');
+                var total = 0;
+                Ext.Array.each(details, function (detail) {
+                    total = total.add(detail['salesTotal']);
+                });
+                return Ext.util.Format.number(total, ',#.00');
             }
         }
     },
@@ -91,6 +107,14 @@ Ext.define('account.view.statement.view.StatementView', {
                 bind: {
                     hidden: '{isEffect}'
                 }
+            }, '->', {
+                xtype: 'label',
+                bind: '<span style="font-size: 15px;font-weight: 700;">本次结算总金额：</span>' +
+                    '<span style="font-weight: 700;font-size: 22px;color: #5FA2DD;line-height: 30px;">{sumTotal}</span>'
+            }, {
+                xtype: 'label',
+                bind: '<span style="font-size: 15px;font-weight: 700;">本次销售总金额：</span>' +
+                    '<span style="font-weight: 700;font-size: 22px;color: #5FA2DD;line-height: 30px;">{sumSalesTotal}</span>'
             }]
         };
     },

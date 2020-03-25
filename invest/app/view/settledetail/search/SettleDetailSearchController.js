@@ -5,7 +5,9 @@ Ext.define('invest.view.settledetail.search.SettleDetailSearchController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.invest.settledetail.search',
 
-    requires: [],
+    requires: [
+        'Cxt.util.Toast'
+    ],
 
     /**
      * 批处理
@@ -16,7 +18,15 @@ Ext.define('invest.view.settledetail.search.SettleDetailSearchController', {
     doBatchAction: function (action, actionText, records) {
         var me = this;
         if (action == 'settle') {
-            account.view.settledetail.SettleDetailService['settle'](records).then(function (responseText) {
+            var entities = [];
+            Ext.Array.each(records, function (record) {
+                Ext.Array.push(entities, record.getData());
+            });
+            if (Ext.isEmpty(entities)) {
+                Cxt.util.Toast.warning('请先选择要出账的明细');
+                return;
+            }
+            invest.view.settledetail.SettleDetailService['settle'](entities).then(function (responseText) {
                 console.log(responseText);
                 me.getView().down("#searchGrid").doSearch();
             });
