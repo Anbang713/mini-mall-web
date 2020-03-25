@@ -31,6 +31,12 @@ Ext.define('account.view.main.Catalog', {
             handler: function () {
                 Cxt.util.Window.moduleRedirectTo(account.view.subject.Subject.moduleId, 'search');
             }
+        }, {
+            xtype: 'button',
+            text: '账单',
+            handler: function () {
+                Cxt.util.Window.moduleRedirectTo(account.view.statement.Statement.moduleId, 'search');
+            }
         }]
     }]
 });
