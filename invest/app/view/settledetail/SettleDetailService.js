@@ -4,7 +4,9 @@
 Ext.define('invest.view.settledetail.SettleDetailService', {
     alias: 'invest.settledetail.service',
     alternateClassName: 'SettleDetailService',
-    requires: [],
+    requires: [
+        'Cxt.util.Toast'
+    ],
 
     singleton: true,
 
@@ -20,6 +22,7 @@ Ext.define('invest.view.settledetail.SettleDetailService', {
                     waitMsg: '正在出账...',
                     jsonData: records
                 }).then(function (response) {
+                    Cxt.util.Toast.success('出账成功');
                     deferred.resolve(response.responseText);
                 }).otherwise(function (response) {
                     deferred.reject(response);
