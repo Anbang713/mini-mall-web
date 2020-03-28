@@ -163,9 +163,10 @@ Ext.define('invest.view.contract.view.ContractView', {
                     bind: '{entity.salesRate}',
                     renderer: Ext.util.Format.percentRenderer(',#.##')
                 }, {
-                    fieldLabel: '科目',
-                    bind: '{entity.subject}',
-                    renderer: Ext.util.Format.ucnRenderer()
+                    xtype: 'cpnt.account.subject.link',
+                    bind: {
+                        entityId: '{entity.subjectUuid}'
+                    }
                 }, {
                     fieldLabel: '税率',
                     bind: '{entity.taxRate}',
