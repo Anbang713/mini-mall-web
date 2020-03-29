@@ -40,7 +40,8 @@ Ext.define('invest.view.settledetail.search.SettleDetailSearchController', {
      * @param record
      */
     doItemAction: function (action, actionText, record) {
-        var entity = record.getData();
+        var me = this,
+            entity = record.getData();
         if (action === 'settle') {
             invest.view.settledetail.SettleDetailService['settle']([entity]).then(function (responseText) {
                 console.log(responseText);
