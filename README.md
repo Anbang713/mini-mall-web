@@ -1,5 +1,7 @@
 # mini-mall-web
 
+代码已迁移到[码云](https://gitee.com/anbang713/mini-mall-web)，后续这里不再维护。
+
 `mini-mall-web`是`mini-mall`项目的前端工程，主要采取Extjs技术框架搭建（Extjs官网：https://www.sencha.com/products/extjs ）。那么……为什么不是Vue.js，为什么不是React等等主流的前端框架，因为……我不会（You can, You up）。所以个人觉得如果是对Extjs这个技术框架一点都不了解的，也就别研究这个前端工程的代码了（当然，如果是有了解过一点Extjs技术框架，并且目前这个技术对自己有用的话，可以瞧瞧看看，我保证整个代码框架肯定值得借鉴），想看界面的话，直接看截图就好了。
 
 # 1. 前端工程代码结构
